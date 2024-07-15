@@ -1,0 +1,55 @@
+.LoginImage {
+  background-size: cover;
+  width: 582px;
+  height: 373px;
+  border: solid 2px blue;
+}
+
+.LoginImage1 {
+  background-size: cover;
+  width: 82px;
+  height: 43px;
+}
+
+.LoginMainContainer {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginSubContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.subContainer {
+  background-color: #ffffff;
+  padding: 30px;
+  box-shadow: 2px 2px 2px 2px #888888;
+  margin-left: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.userId {
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.userInput {
+  height: 20px;
+  margin-bottom: 10px;
+  box-shadow: 2px;
+}
+
+@media screen and (max-width: 768px) {
+  .LoginMainContainer {
+    display: none;
+  }
+}

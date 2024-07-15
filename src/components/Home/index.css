@@ -1,0 +1,72 @@
+.top_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+  align-items: center;
+}
+
+.insideStory {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.insideStory img {
+  margin: 20 px;
+  border-radius: 50%;
+  width: 50px;
+}
+
+.insideStory p {
+  font-size: 18px;
+  font-family: 'Roboto';
+  margin: 10px;
+  font-weight: 500;
+}
+
+.image-post {
+  margin: 20px;
+  align-self: center;
+  width: 45vw;
+  height: 50vh;
+}
+
+.like-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 20px;
+}
+
+.styling-1 {
+  margin-right: 10px;
+}
+
+.likes-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 20px;
+}
+
+.likes-section p {
+  padding-right: 10px;
+  font-size: 18px;
+  font-family: 'Roboto';
+  font-weight: 500;
+}
+
+.caption-section {
+  margin-left: 20px;
+  margin-top: auto;
+}
+
+.error-view-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
