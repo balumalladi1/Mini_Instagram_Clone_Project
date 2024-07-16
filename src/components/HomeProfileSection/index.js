@@ -1,6 +1,6 @@
 import {Component} from 'react'
 
-import {Cookies} from 'js-cookie'
+import Cookies from 'js-cookie'
 
 import Header from '../Header'
 
@@ -14,9 +14,9 @@ class HomeProfileSection extends Component {
   }
 
   getFormattedData = data => ({
-    id: data.profile.id,
-    userId: data.profile.user_id,
-    userName: data.profile.user_name,
+    id: data.id,
+    userId: data.user_id,
+    userName: data.user_name,
   })
 
   getDetails = async () => {

@@ -2,17 +2,13 @@ import {Component} from 'react'
 
 import Loader from 'react-loader-spinner'
 
-import {BsHeart} from 'react-icons/bs'
+import {BsHeart, BsChevronLeft, BsChevronRight} from 'react-icons/bs'
 
 import {BiMessageRounded} from 'react-icons/bi'
 
 import Cookies from 'js-cookie'
 
 import './index.css'
-
-import {BsChevronLeft} from 'react-icons/bs'
-
-import {BsChevronRight} from 'react-icons/bs'
 
 import {Link} from 'react-router-dom'
 
@@ -141,7 +137,7 @@ class Home extends Component {
       <div>
         {profilelist.map(each => (
           <>
-            <Link to={`/users/${userId}`} className="insideStory">
+            <Link to={`/users/${each.userId}`} className="insideStory">
               <img src={each.profilepic} alt="user profile" />
               <p>{each.username}</p>
             </Link>
@@ -154,7 +150,7 @@ class Home extends Component {
               <p>{each.likescount}</p>
               <p>likes</p>
             </div>
-            <p></p>
+            <p />
 
             <p className="caption-section">{each.caption}</p>
             <p className="caption-section">{each.createdat}</p>
