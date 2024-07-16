@@ -94,7 +94,7 @@ class Home extends Component {
       const data = await response.json()
       const updatedProfileData = data.posts.map(each => ({
         id: each.post_id,
-        userid: each.user_id,
+        userId: each.user_id,
         username: each.user_name,
         profilepic: each.profile_pic,
         userimage: each.post_details.image_url,
@@ -135,12 +135,13 @@ class Home extends Component {
 
   renderHomeList = () => {
     const {profilelist} = this.state
+    const {userId} = profilelist
 
     return (
       <div>
         {profilelist.map(each => (
           <>
-            <Link to="/my-profile" className="insideStory">
+            <Link to={`/users/${userId}`} className="insideStory">
               <img src={each.profilepic} alt="user profile" />
               <p>{each.username}</p>
             </Link>
