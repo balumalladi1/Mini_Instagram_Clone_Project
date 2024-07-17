@@ -63,7 +63,6 @@ const apiStatusConstants = {
 class Home extends Component {
   state = {
     profilelist: [],
-    commentlist: [],
   }
 
   componentDidMount() {
@@ -141,7 +140,7 @@ class Home extends Component {
               <img src={each.profilepic} alt="user profile" />
               <p>{each.username}</p>
             </Link>
-            <img src={each.userimage} className="image-post" />
+            <img src={each.userimage} alt="images" className="image-post" />
             <div className="like-section">
               <BsHeart size="30" className="styling-1" />
               <BiMessageRounded size="35" />

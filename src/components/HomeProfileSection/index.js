@@ -44,7 +44,7 @@ class HomeProfileSection extends Component {
 
   render() {
     const {profiledetails} = this.state
-    const {id, userName} = profiledetails
+    const {userName} = profiledetails
     return (
       <div>
         <Header />
